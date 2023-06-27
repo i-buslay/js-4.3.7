@@ -26,7 +26,9 @@ async function search() {
             }
 
             info.addEventListener('click', (e) => {
-                e.target.classList.add('container-color');
+                if (e.target !== info) {
+                    e.target.classList.add('container-color');
+                }
                 text.value = null;
 
                 for (let i = 0; i < 5; i++) {
