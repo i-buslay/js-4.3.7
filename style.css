@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(Roboto-Regular.woff) format('woff');
+    font-weight: 400;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #000;
+    background-color: #C4C4C4;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 0 auto;
+    margin-top: 48px;
+    height: 61px;
+    width: 500px;
+    font-size: 48px;
+}
+
+.info {
+    margin-bottom: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    display: flex;
+    border: 2px solid black;
+    background-color: #E3E3E3;
+    padding-left: 10px;
+    width: 500px;
+    height: 44px;
+    align-items: center;
+    font-size: 30px;
+}
+
+.container-color {
+    background-color: #65CDF9;
+}
+
+.added {
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+    padding-right: 30px;
+    background-color: #E27BEB;
+    font-size: 24px;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    background-color: inherit;
+    border: none;
+    margin-left: auto;
+}
+
+.button::before {
+    content: "";
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-left: 4px solid red;
+    transform: rotate(45deg);
+    left: 39%;
+    top: -2%;
+}
+
+.button::after {
+    content: "";
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-left: 4px solid red;
+    transform: rotate(-45deg);
+    bottom: 30%;
+    right: 10%;
+}
+
+
+
